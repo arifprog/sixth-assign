@@ -25,6 +25,12 @@ addBtn.addEventListener('click',(event)=>{
     listItem.appendChild(editButton);
     editButton.style.paddingTop = '12px';
     
+    let deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+    deleteButton.className = 'ml-[900px] bg-red-500 hover:bg-pink-700 text-white font-bold w-[150px] py-3 rounded ';
+    listItem.appendChild(deleteButton);
+    deleteButton.style.paddingTop = '12px';
+
 
     editButton.addEventListener('click', function() {
     let newTask = prompt('Edit your task:', listItem.textContent);
@@ -33,6 +39,9 @@ addBtn.addEventListener('click',(event)=>{
         listItem.appendChild(editButton); 
     }
 });
-
+deleteButton.addEventListener('click', function () {
+    
+    taskList.removeChild(listItem);
+});
     
 })

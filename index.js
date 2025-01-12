@@ -1,6 +1,8 @@
 let inputBox = document.querySelector ('#inputBox');
 let addBtn = document.querySelector('#addBtn');
-let listbox = document.querySelector('p');
+let taskList = document.querySelector('#taskList');
+
+
 
 addBtn.addEventListener('click',(event)=>{
     event.preventDefault();
@@ -10,9 +12,10 @@ addBtn.addEventListener('click',(event)=>{
         return;
     }
 
-    let option = new Option(inputBox.value,inputBox.value);
+    let listItem = document.createElement('li');
+    listItem.textContent = inputBox.value;
+    listItem.className = 'bg-gray-400 w-[300px] md:w-[900px] ml-10 px-4 py-2 rounded ';
     
-    let task = listbox.appendChild(option);
+    taskList.appendChild(listItem);
     inputBox.value = '';
-
 })

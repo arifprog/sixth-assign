@@ -27,7 +27,7 @@ addBtn.addEventListener('click',(event)=>{
     
     let editButton = document.createElement('button');
     editButton.textContent = '';
-    editButton.className = 'ml-[223px] md:ml-[800px] bg-green-500 hover:bg-lime-600 text-white font-bold w-[15px] md:w-[50px] py-3 rounded-xl shadow-md ';
+    editButton.className = 'ml-[223px] md:ml-[800px] bg-green-500 hover:bg-lime-600 text-white font-bold w-[20px] md:w-[50px] py-3 rounded-xl shadow-md ';
     buttonContainer.appendChild(editButton);
     editButton.innerHTML = '<i class="fas fa-edit"></i>';
 
@@ -39,7 +39,7 @@ addBtn.addEventListener('click',(event)=>{
     
     let doneButton = document.createElement('button');
     doneButton.textContent = '';
-    doneButton.className = 'ml-[10px] md:ml-[800px] bg-orange-500 hover:bg-amber-700 text-white font-bold w-[15px] md:w-[50px] py-3 rounded-xl shadow-md ';
+    doneButton.className = 'ml-[10px] md:ml-[800px] bg-orange-500 hover:bg-amber-700 text-white font-bold w-[20px] md:w-[50px] py-3 rounded-xl shadow-md ';
     buttonContainer.appendChild(doneButton);
     doneButton.innerHTML = '<i class="fas fa-check"></i>';
 
@@ -51,7 +51,7 @@ addBtn.addEventListener('click',(event)=>{
     
     let deleteButton = document.createElement('button');
     deleteButton.textContent = '';
-    deleteButton.className = 'ml-[10px] md:ml-[800px] bg-red-500 hover:bg-rose-700 text-white font-bold w-[15px] md:w-[50px] py-3 rounded-xl shadow-md  ';
+    deleteButton.className = 'ml-[10px] md:ml-[800px] bg-red-500 hover:bg-rose-700 text-white font-bold w-[20px] md:w-[50px] py-3 rounded-xl shadow-md  ';
     buttonContainer.appendChild(deleteButton);
     deleteButton.innerHTML = '<i class="fas fa-trash-alt"></i>';
 
